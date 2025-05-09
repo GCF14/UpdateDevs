@@ -5,25 +5,23 @@ import TabBar from '../../components/TabBar'
 
 const _layout = () => {
   return (
-    <Tabs
-        tabBar={props=> <TabBar {...props} />}
-    >
-        <Tabs.Screen
+    <Tabs>
+        {/* <Tabs.Screen
             name="index"
             options={{
                 title: "Home"
             }}
         />
         <Tabs.Screen
-            name="explore"
+            name="search"
             options={{
-                title: "Explore"
+                title: "Search"
             }}
         />
         <Tabs.Screen
-            name="create"
+            name="bookmark"
             options={{
-                title: "Create"
+                title: "Bookmark"
             }}
         />
         <Tabs.Screen
@@ -31,7 +29,7 @@ const _layout = () => {
             options={{
                 title: "Profile"
             }}
-        />
+        /> */}
     </Tabs>
   )
 }

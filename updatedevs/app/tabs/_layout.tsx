@@ -5,31 +5,37 @@ import TabBar from '../../components/TabBar'
 
 const _layout = () => {
   return (
-    <Tabs>
-        {/* <Tabs.Screen
+    <Tabs 
+        tabBar={props=> <TabBar {...props} />}
+    >
+        <Tabs.Screen
             name="index"
             options={{
-                title: "Home"
+                title: "Home",
+                headerTitleAlign: 'center'
             }}
         />
         <Tabs.Screen
             name="search"
             options={{
-                title: "Search"
+                title: "Search",
+                headerTitleAlign: 'center'
             }}
         />
         <Tabs.Screen
             name="bookmark"
             options={{
-                title: "Bookmark"
+                title: "Bookmark",
+                headerTitleAlign: 'center'
             }}
         />
         <Tabs.Screen
             name="profile"
             options={{
-                title: "Profile"
+                title: "Profile",
+                headerTitleAlign: 'center'
             }}
-        /> */}
+        />
     </Tabs>
   )
 }
